@@ -1,5 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, Main!</string>
-    <string name="app_name">delhimetro</string>
+    <string name="app_name">Delhi Metro</string>
+    <string name="app_stations">Delhi Metro Stations</string>
+    <string-array name="metro_lines">
+        <item>Red Line</item>
+        <item>Blue Line</item>
+        <item>Green Line</item>
+        <item>Yellow Line</item>
+        <item>Orange Line</item>
+        <item>Voilet Line</item>
+    </string-array>
+    <string-array name="red_line_stations">
+        <item>Dilshad Garden</item>
+        <item>Jhilmil</item>
+        <item>Mansarovar Park</item>
+        <item>Shahdara</item>
+        <item>Welcome</item>
+        <item>Seelampur</item>
+        <item>Shastri Park</item>
+        <item>Kashmere Gate</item>
+        <item>Tis Hazari</item>
+        <item>Pul Bangash</item>
+        <item>Pratap Nagar</item>
+        <item>Shastri Nagar</item>
+        <item>Inderlok</item>
+        <item>Kanhiya Nagar</item>
+        <item>Keshav Puram</item>
+        <item>Netaji Subhash Place</item>
+        <item>Kohat Enclave</item>
+        <item>Pitam Pura</item>
+        <item>Rohini East</item>
+        <item>Rohini West</item>
+        <item>Rithala</item>
+    </string-array>
+    <string-array name="blue_line_stations">
+        <item>Noida City Centre</item>
+        <item>Noida Golf Course</item>
+        <item>Botanical Garden</item>
+        <item>Noida Sector 18</item>
+        <item>Noida Sector 16</item>
+        <item>Noida Sector 15</item>
+        <item>New Ashok Nagar</item>
+        <item>Mayur Vihar Extension</item>
+        <item>Mayur Vihar - I</item>
+        <item>Akshardham</item>
+        <item>Yamuna Bank</item>
+        <item>Indraprastha</item>
+        <item>Pragati Maidan</item>
+        <item>Mandi House</item>
+        <item>Barakhambha Road</item>
+        <item>Rajiv Chowk</item>
+        <item>Ramakrishna Ashram Marg</item>
+        <item>Jhandewalan</item>
+        <item>Karol Bagh</item>
+        <item>Rajendra Place</item>
+        <item>Patel Nagar</item>
+        <item>Shadipur</item>
+        <item>Kirti Nagar</item>
+        <item>Moti Nagar</item>
+        <item>Ramesh Nagar</item>
+        <item>Rajouri Garden</item>
+        <item>Tagore Garden</item>
+        <item>Subhash Nagar</item>
+        <item>Tilak Nagar</item>
+        <item>Janakpuri East</item>
+        <item>Janakpuri West</item>
+        <item>Uttam Nagar East</item>
+        <item>Uttam Nagar West</item>
+        <item>Nawada</item>
+        <item>Dwarka Morh</item>
+        <item>Dwarka</item>
+        <item>Dwarka Sector 14</item>
+        <item>Dwarka Sector 13</item>
+        <item>Dwarka Sector 12</item>
+        <item>Dwarka Sector 11</item>
+        <item>Dwarka Sector 10</item>
+        <item>Dwarka Sector 9</item>
+        <item>Dwarka Sector 8</item>
+        <item>Dwarka Sector 21</item>
+        <item>Dwarka Sector 13</item>
+    </string-array>
+    <string-array name="green_line_stations">
+        <item>Inderlok</item>
+        <item>Ashok Park Main</item>
+        <item>Punjabi Bagh East</item>
+        <item>Shivaji Park</item>
+        <item>Madipur</item>
+        <item>Paschim Vihar East</item>
+        <item>Paschim Vihar West</item>
+        <item>Peera Garhi</item>
+        <item>Udyog Nagar</item>
+        <item>Surajmal Stadium</item>
+        <item>Nangloi</item>
+        <item>Nangloi Railway station</item>
+        <item>Rajdhani Park</item>
+        <item>Mundka</item>
+    </string-array>
+    <string-array name="yellow_line_stations">
+        <item>Jahangirpuri</item>
+        <item>Adarsh Nagar</item>
+        <item>Azadpur</item>
+        <item>Model Town</item>
+        <item>GTB Nagar</item>
+        <item>Vishwa Vidyalaya</item>
+        <item>Vidhan Sabha</item>
+        <item>Civil Lines</item>
+        <item>Kashmere Gate</item>
+        <item>Chandni Chowk</item>
+        <item>Chawri Bazar</item>
+        <item>New Delhi Station</item>
+        <item>Rajiv Chowk</item>
+        <item>Patel Chowk</item>
+        <item>Central Secretariat</item>
+        <item>Udyog Bhawan</item>
+        <item>Race Course</item>
+        <item>Jor Bagh</item>
+        <item>INA</item>
+        <item>AIIMS</item>
+        <item>Green Park</item>
+        <item>Hauz Khas</item>
+        <item>Malviya Nagar</item>
+        <item>Saket</item>
+        <item>Qutub Minar</item>
+        <item>Chhatarpur</item>
+        <item>Sultanpur</item>
+        <item>Ghitorni</item>
+        <item>Arjan Garh</item>
+        <item>Guru Dronacharya</item>
+        <item>Sikandarpur</item>
+        <item>MG Road</item>
+        <item>IFFCO Chowk</item>
+        <item>HUDA City Centre</item>
+    </string-array>
+    <string-array name="orange_line_stations">
+        <item>New Delhi station</item>
+        <item>Shivaji Stadium</item>
+        <item>Dhaula Kuan</item>
+        <item>Delhi Aerocity</item>
+        <item>Indira Gandhi International Airport</item>
+        <item>Dwarka Sector 21</item>
+    </string-array>
+    <string-array name="voilet_line_stations">
+        <item>Central Secretariat</item>
+        <item>Khan Market</item>
+        <item>Jawaharlal Nehru Stadium</item>
+        <item>Jangpura</item>
+        <item>Lajpat Nagar</item>
+        <item>Moolchand</item>
+        <item>Kailash Colony</item>
+        <item>Nehru Place</item>
+        <item>Kalkaji Mandir</item>
+        <item>Govind Puri</item>
+        <item>Okhla</item>
+        <item>Jasola</item>
+        <item>Sarita Vihar</item>
+        <item>Mohan Estate</item>
+        <item>Tughlakabad</item>
+        <item>Badarpur</item>
+    </string-array>
 </resources>
