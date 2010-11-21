@@ -18,7 +18,29 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".StationView" android:label="@string/app_stations">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Help" android:label="@string/app_help">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".About" android:label="@string/app_about">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Settings" android:label="@string/app_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
     </application>
-
-
 </manifest> 

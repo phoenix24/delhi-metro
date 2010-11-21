@@ -54,11 +54,10 @@ public class Stations extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
 //        Map map = (Map) l.getItemAtPosition(position);
-//
-//        Intent intent = (Intent) map.get("intent");
-//        startActivity(intent);
-        Toast.makeText(getApplicationContext(), ((TextView) v).getText(),
-                Toast.LENGTH_SHORT).show();
+    	Intent intent = new Intent(this, StationView.class);
+    	startActivity(intent);
+//        Toast.makeText(getApplicationContext(), ((TextView) v).getText(),
+//                Toast.LENGTH_SHORT).show();
     }
     
 }
