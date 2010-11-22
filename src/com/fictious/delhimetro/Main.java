@@ -76,11 +76,12 @@ public class Main extends ListActivity {
 //				intent.setClassName(this, About.class.getName());
 //				startActivity(intent);
 		        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		        builder.setTitle("about title");
-		        builder.setMessage("about message");
+		        
+		        builder.setTitle(R.string.menu_about_title);
+		        builder.setMessage(R.string.menu_about_message);
 		        builder.setIcon(R.drawable.launcher_icon);
-		        builder.setPositiveButton("browser", null);
-		        builder.setNegativeButton("cancel", null);
+		        builder.setPositiveButton(R.string.menu_about_browser, null);
+		        builder.setNegativeButton(R.string.menu_about_cancel, null);
 		        builder.show();
 				break;
 			}
