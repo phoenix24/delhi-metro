@@ -1,5 +1,10 @@
 package com.fictious.delhimetro;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Intent;
@@ -7,45 +12,63 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 public class Main extends ListActivity {
 
 	private static final int HELP_ID = Menu.FIRST;
 	private static final int ABOUT_ID = Menu.FIRST + 1;
 	private static final int SETTINGS_ID = Menu.FIRST + 2;
+	private static String [] metro_lines = {};
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		String[] metro_lines = getResources().getStringArray(
+		metro_lines = getResources().getStringArray(
 				R.array.metro_lines);
-		ListAdapter adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, metro_lines);
-		setListAdapter(adapter);
+		
+//		ListAdapter adapter = new ArrayAdapter<String>(this,
+//				R.layout.main_rows, R.id.label, metro_lines);
+//		setListAdapter(adapter);
+		
+		setListAdapter(new SimpleAdapter(this, 
+											getData(), 
+											R.layout.main_rows, 
+											new String[] { "label", "lowerline" }, 
+											new int[] { R.id.label, R.id.lowerline }));
 	}
-
+	
+	protected List getData() {
+		List<Map> metrolines = new ArrayList<Map>();
+		Map<String, Object> object;
+		
+		for(String line: metro_lines) {
+			object = new HashMap<String, Object>();
+			object.put("label", line);
+			object.put("lowerline", "ouch! " + line);
+			metrolines.add(object);
+		}
+		
+		return metrolines;
+	}
+	
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		Intent intent = new Intent(this, Stations.class);
+		String[] intentArray = {
+				"RED_LINE",
+				"BLUE_LINE",
+				"GREEN_LINE",
+				"YELLOW_LINE",
+				"ORANGE_LINE",
+				"VOILET_LINE"
+		};
 
-		if (position == 0)
-			intent.putExtra("RED_LINE", true);
-		if (position == 1)
-			intent.putExtra("BLUE_LINE", true);
-		if (position == 2)
-			intent.putExtra("GREEN_LINE", true);
-		if (position == 3)
-			intent.putExtra("YELLOW_LINE", true);
-		if (position == 4)
-			intent.putExtra("ORANGE_LINE", true);
-		if (position == 5)
-			intent.putExtra("VOILET_LINE", true);
-
+//		intent.putExtra(intentArray[position], true);
+		intent.putExtra("METRO_LINE", position);
 		startActivity(intent);
 	}
 
