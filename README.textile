@@ -1,13 +1,15 @@
 h3. Our Approach to View Delhi Metro on Android Phones.
 
-roadmap;
-0.1, metro listing;
-     -- should be a simple list view.
+* roadmap - 0.1;
+*# -metro listing;-
+** should be a simple list view.-
+*# complete the metro-line & station views.
+*# fill the metro station data.
 
-0.2, draw a map; opengl; canvas etc.
-
-0.3, integrate with google maps; gps; etc.
-
+* roadmap - 0.2
+*# draw a map; opengl; canvas etc.
+* roadmap - 0.3
+*# integrate with google maps; gps; etc.
 
 todos
-1, fix the readme; use textile
+-1, fix the readme; use textile-
