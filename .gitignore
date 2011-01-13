@@ -10,3 +10,9 @@
 
 # generated GUI files
 *R.java
+
+#ignore Thumbs.db
+Thumbs.db
+
+#Ignore eclipse project file.
+.project
