@@ -1,7 +1,5 @@
 package com.fictious.delhimetro;
 
-import java.util.Map;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +7,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class Stations extends ListActivity {
 
@@ -77,5 +73,4 @@ public class Stations extends ListActivity {
 		// Toast.makeText(getApplicationContext(), ((TextView) v).getText(),
 		// Toast.LENGTH_SHORT).show();
 	}
-
 }
